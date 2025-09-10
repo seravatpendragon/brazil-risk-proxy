@@ -1,5 +1,5 @@
 # ===================================================================================
-# SCRIPT PRINCIPAL DE EXECUÇÃO - IARP v7.0
+# SCRIPT PRINCIPAL DE EXECUÇÃO - IARP v1.0
 #
 # Autor: Projeto Argus & Gemini (Refatorado)
 # Data: 10 de setembro de 2025
@@ -89,7 +89,7 @@ def generate_final_predictions(X_final, y, stable_features):
 def main():
     """Função principal que executa todo o pipeline de validação."""
     print("="*80)
-    print("=== SCRIPT DE VALIDAÇÃO FINAL E TESTE DE ESTRESSE - IARP v7.0 ===")
+    print("=== SCRIPT DE VALIDAÇÃO FINAL E TESTE DE ESTRESSE - IARP v1.0 ===")
     print("="*80)
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)

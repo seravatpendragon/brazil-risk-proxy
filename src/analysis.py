@@ -77,14 +77,14 @@ def plot_final_indicator_comparison(final_predictions, hybrid_target, embi_serie
     fig, ax = plt.subplots(figsize=(16, 10))
 
     ax.plot(hybrid_target.index, hybrid_target, label='Alvo Híbrido (Real)', color='black', linewidth=2.5, alpha=0.7, zorder=3)
-    ax.plot(final_predictions.index, final_predictions, label='Indicador IARP v7.0 (Modelo)', color='royalblue', linestyle='--', linewidth=2.5, zorder=4)
+    ax.plot(final_predictions.index, final_predictions, label='Indicador IARP v1.0 (Modelo)', color='royalblue', linestyle='--', linewidth=2.5, zorder=4)
     ax.plot(embi_series.index, embi_series, label='EMBI+ (Componente)', color='skyblue', linestyle=':', linewidth=2, alpha=0.8, zorder=1)
     ax.plot(cds_series.index, cds_series, label='CDS 5 Anos (Componente)', color='coral', linestyle=':', linewidth=2, alpha=0.8, zorder=2)
 
     transition_date = pd.to_datetime('2024-07-31')
     ax.axvline(transition_date, color='grey', linestyle='-.', lw=1.5, label=f'Transição EMBI/CDS ({transition_date.date()})')
 
-    ax.set_title('IARP v7.0 vs. Componentes de Risco (EMBI+ e CDS)', fontsize=18, pad=20)
+    ax.set_title('IARP v1.0 vs. Componentes de Risco (EMBI+ e CDS)', fontsize=18, pad=20)
     ax.set_ylabel('Risco (bps)', fontsize=12)
     ax.set_xlabel('Data', fontsize=12)
     ax.legend(fontsize=11, loc='upper left')
