@@ -1,8 +1,7 @@
 # ===================================================================================
 # SCRIPT PRINCIPAL DE EXECUÇÃO - IARP v1.0
 #
-# Autor: Projeto Argus & Gemini (Refatorado)
-# Data: 10 de setembro de 2025
+# Autor: Argus
 #
 # Descrição:
 # Orquestra a execução completa do pipeline do IARP:
